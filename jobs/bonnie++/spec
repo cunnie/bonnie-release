@@ -1,0 +1,13 @@
+---
+name: bonnie++
+
+templates:
+  run: bin/run
+
+packages:
+- bonnie++
+
+properties:
+  args:
+    description: "command-line arguments to bonnie++"
+    default: "-m BOSH_bonnie++ -d /var/vcap/data/bonnie++"
