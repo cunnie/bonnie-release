@@ -1,1 +1,7 @@
-name: bonnie
+---
+blobstore:
+  provider: s3
+  options:
+    bucket_name: bonnie-release
+    region: us-west-1
+final_name: bonnie++
