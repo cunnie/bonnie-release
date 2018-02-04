@@ -1,1 +1,7 @@
-set -e
+set -e -x
+
+tar xzvf bonnie++/bonnie++-1.97.3.tgz
+cd bonnie++-1.97.3
+
+./configure --prefix=$BOSH_INSTALL_TARGET
+make install

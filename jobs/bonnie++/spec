@@ -9,5 +9,14 @@ packages:
 
 properties:
   args:
-    description: "command-line arguments to bonnie++"
-    default: "-m BOSH_bonnie++ -d /var/vcap/data/bonnie++"
+    description: |
+      Command-line arguments to bonnie++; don't include the directory (`d`)
+      `bonnie++` will run as user vcap by default, so no need to use the
+      `-u` flag
+    default: "-m BOSH_bonnie++"
+  dir:
+    description: |
+      The directory in which `bonnie++` runs its tests. If the directory
+      doesn't exist, it will be created. The directory is appended to the
+      `args` property. The ownership of the directory will be set to `vcap`.
+    default: /var/vcap/data/bonnie++

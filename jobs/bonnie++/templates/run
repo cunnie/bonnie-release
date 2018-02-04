@@ -1,1 +1,6 @@
-/var/vcap/packages/bonnie++/bin/bonnie++ <% p('args') %>
+#!/bin/bash
+
+BONNIE_DIR=<%= p('dir') %>
+mkdir -p $BONNIE_DIR
+sudo chown vcap $BONNIE_DIR
+/var/vcap/packages/bonnie++/sbin/bonnie++ -u vcap -d $BONNIE_DIR <%= p('args') %>
