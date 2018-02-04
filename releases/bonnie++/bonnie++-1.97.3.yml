@@ -1,0 +1,19 @@
+name: bonnie++
+version: 1.97.3
+commit_hash: 8f26d5a
+uncommitted_changes: false
+jobs:
+- name: bonnie++
+  version: 755fc7c5a5363ad6bf31b1b76e08b729437c041e
+  fingerprint: 755fc7c5a5363ad6bf31b1b76e08b729437c041e
+  sha1: 6ba269aeb14a4f11c7ea536ddc44ac0724dddf9a
+packages:
+- name: bonnie++
+  version: 3289b3beed62840e696fdeed897347ba66034db9
+  fingerprint: 3289b3beed62840e696fdeed897347ba66034db9
+  sha1: fe2d704a64deb71289293aa77314446265eaa411
+  dependencies: []
+license:
+  version: 0fbc9511a7e7f3a4d2f1af47f5ed327237b5f06c
+  fingerprint: 0fbc9511a7e7f3a4d2f1af47f5ed327237b5f06c
+  sha1: 768d85d7e3e7c5eb653f52303ef92f512753f37f
